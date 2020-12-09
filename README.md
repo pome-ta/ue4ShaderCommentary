@@ -28,7 +28,7 @@
 
 ↑は、Texture を表示してるけど、UV だけで出せる(後述します)
 
-[公式リファレンス](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/index.html#texturecoordinate)
+> [公式リファレンス(texturecoordinate)](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/index.html#texturecoordinate)
 
 ピンの`in` ,`out` の名前で繋ぐ的な
 
@@ -56,6 +56,7 @@
 [<R: 1.0, G: 0.0, B: 0.0> "Constant3Vector" <out: (R, G, B)>] -> [<final_color: (r, g)> "最終出力"]
 ```
 
+> [公式リファレンス(https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Constant/index.html#constant3vector)]
 
 
 
