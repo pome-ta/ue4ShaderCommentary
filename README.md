@@ -10,8 +10,8 @@
 
 ## 表記例
 
-``` .matlab
-[<in: ピン>'ノード(関数)名'<out: ピン>] -> [<in: ピン>'関数名'<out: ピン>]
+``` .hs
+[<in: ピン> "ノード(関数)名" <out: ピン>]
 
 ```
 
@@ -21,10 +21,7 @@
 
 ``` .hs
 
-[ "TexCoord" <(r, g)>] -> [<final_color(r, g)>'最終出力']
-
-
-['TexCoord'<(r, g)>] -> [<final color: (r, g)>'最終出力']
+[ "TexCoord" <(r, g)>] -> [<final_color: (r, g)> "最終出力"]
 ```
 
 ピンの`in` ,`out` の名前で繋ぐ的な
