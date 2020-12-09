@@ -329,7 +329,7 @@
 関数のノードも使い始めたので、速度を変えることから
 
 
-#### 点滅の速さを変える
+### 点滅の速さを変える
 
 
 コードを見ていく(見辛いから、改行しているけど、上と同じ)
@@ -341,12 +341,12 @@
 ```
 
 
-`Time`(リファレンス見つからない)
+#### `Time`(リファレンス見つからない)
 
 説明せんでも、わかるやろ？ 😇
 
 
-[`Sine`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/index.html#Sine)
+#### [`Sine`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/index.html#Sine)
 
 リファレンスの本文で、読み解くところは
 > Sine 式は、[0、1] の入力範囲と [-1、1] の出力範囲にサイン波の値繰り返し出力します。
@@ -361,11 +361,12 @@
 
 `Cosine` 実行してみてもいいけど、今回のノードの組み合わせだと変化を感じないと思うで
 
-[`Abs`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/index.html#abs)
+#### [`Abs`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/index.html#abs)
 
 読み解くところは
 
-> 、基本的にマイナス符号を取り除くことで負の数を正の数に変えます。正の数と 0 の場合は変化しません。
+> 基本的にマイナス符号を取り除くことで負の数を正の数に変えます。正の数と 0 の場合は変化しません。
+
 > 例： -0.7 の Abs は 0.7 、-1.0 の Abs は 1.0、1.0 の Abs は 1.0 です。
 
 
