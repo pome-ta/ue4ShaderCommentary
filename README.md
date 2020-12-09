@@ -18,7 +18,7 @@
 
 ### 具体例
 
-``` .html
+``` *
 [ <TexCoord> { (r, g) } ] -> [ { final color(r, g) } <最終出力> ]
 ```
 
