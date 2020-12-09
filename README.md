@@ -24,6 +24,9 @@
 [ "TexCoord" <(r, g)>] -> [<final_color: (r, g)> "最終出力"]
 ```
 
+![画像例](https://docs.unrealengine.com/Images/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/TextureCoordinateExample.jpg)
+[公式リファレンス](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/index.html#texturecoordinate)
+
 ピンの`in` ,`out` の名前で繋ぐ的な
 
 この場合だと、`TexCoord` の`out` にあるピンは、2つの値がある(`r = U` , `g = V` )
