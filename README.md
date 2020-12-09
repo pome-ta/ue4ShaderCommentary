@@ -39,11 +39,30 @@
 > SyntaxHighlight 上、`in` `out` の名前で間にスペースがあるものは、`_` で繋いでる(スネークケース)
 
 
-## 色を出す
+## 色を出力する
 
 
 ### 単色
 
-[具体例](#具体例)のノードは、忘れるんだ😇
+[具体例](#具体例)のノードは、忘れるんだ😇 ただ、ノードの繋ぎ方をテキストで表現しただけなのだ😊
+
+
+基礎の基礎から始める。まずは、単色を出力してみたい
+
+`RGB` で色を表現できるので「赤、緑、青」を出す。
+
+
+
+---
+
+# メモ
+
+
+ue の関数から探すのではなく、やりたいことをue の関数から探してる
+
+
+[TimeWithSpeedVariable](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/Functions/Reference/Misc/index.html#TimeWithSpeedVariable)
+
+`time` に`Frac` なんていらなかったんや、、、
 
 
