@@ -25,6 +25,9 @@
 ```
 
 ![画像例](https://docs.unrealengine.com/Images/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/TextureCoordinateExample.jpg)
+
+↑は、Texture を表示してるけど、UV だけで出せる(後述します)
+
 [公式リファレンス](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/index.html#texturecoordinate)
 
 ピンの`in` ,`out` の名前で繋ぐ的な
