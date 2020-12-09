@@ -49,7 +49,18 @@
 
 基礎の基礎から始める。まずは、単色を出力してみたい
 
-`RGB` で色を表現できるので「赤、緑、青」を出す。
+`RGB` で色を表現できるので「赤、緑、青」は比較的扱いやすいので出力する。
+
+
+``` .hs
+[<R: 1.0, G: 0.0, B: 0.0> "Constant3Vector" <out: (R, G, B)>] -> [<final_color: (r, g)> "最終出力"]
+```
+
+
+
+
+
+
 
 
 
@@ -61,8 +72,8 @@
 ue の関数から探すのではなく、やりたいことをue の関数から探してる
 
 
-[TimeWithSpeedVariable](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/Functions/Reference/Misc/index.html#TimeWithSpeedVariable)
+[`TimeWithSpeedVariable`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/Functions/Reference/Misc/index.html#TimeWithSpeedVariable)
 
 `time` に`Frac` なんていらなかったんや、、、
 
-
+`SplitComponents`
