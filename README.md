@@ -348,8 +348,28 @@
 
 [`Sine`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/index.html#Sine)
 
+リファレンスの本文で、読み解くところは
+> Sine 式は、[0、1] の入力範囲と [-1、1] の出力範囲にサイン波の値繰り返し出力します。
+
+ここと、
+> 出力範囲は [0、1] に調整しています。
+
+あと、画像を見ておけばいい。
+
 
 ![画像](https://docs.unrealengine.com/Images/RenderingAndGraphics/Materials/ExpressionReference/Math/SineWave.webp)
+
+`Cosine` 実行してみてもいいけど、今回のノードの組み合わせだと変化を感じないと思うで
+
+[`Abs`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/index.html#abs)
+
+読み解くところは
+
+> 、基本的にマイナス符号を取り除くことで負の数を正の数に変えます。正の数と 0 の場合は変化しません。
+> 例： -0.7 の Abs は 0.7 、-1.0 の Abs は 1.0、1.0 の Abs は 1.0 です。
+
+
+
 
 
 
