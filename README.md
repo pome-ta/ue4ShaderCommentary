@@ -19,7 +19,11 @@
 
 ### 具体例
 
-``` .matlab
+``` .hs
+
+['TexCoord'<(r, g)>] -> [<final_color(r, g)>'最終出力']
+
+
 ['TexCoord'<(r, g)>] -> [<final color: (r, g)>'最終出力']
 ```
 
