@@ -343,7 +343,7 @@
 
 
 
-#### `Time`(リファレンス見つからない)
+#### [`Time`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Constant/index.html#time)
 
 説明せんでも、わかるやろ？ 😇
 
