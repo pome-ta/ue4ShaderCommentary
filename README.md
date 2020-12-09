@@ -20,7 +20,6 @@
 ### 具体例
 
 ``` .hs
-
 [ "TexCoord" <(r, g)>] -> [<final_color: (r, g)> "最終出力"]
 ```
 
@@ -85,13 +84,16 @@
 リファレンス検索して見つからなくて、(私が)前に使ったはずの[`Make Vector`](https://docs.unrealengine.com/en-US/BlueprintAPI/Math/Vector/MakeVector/index.html) 的なやつのマテリアルエディタで使えるやつ？での実装もできる
 
 
+`make float3` とかだったか？(なんせ、全然リファレンスが上手に探せない。。。)
+
+
 やり方、考え方は同じで
 
 
 ``` .hs
 [ "Constant" <R(とする): 1.0>] ->
 [ "Constant" <G(とする): 0.0>] ->
-[ "Constant" <B(とする): 0.0>] -> [<R, G, B> "make_vector(的なの)" <rgb: (R, G, B)>] -> [<final_color: (R, G, B)> "最終出力"]
+[ "Constant" <B(とする): 0.0>] -> [<R, G, B> "make_float3(的なの)" <rgb: (R, G, B)>] -> [<final_color: (R, G, B)> "最終出力"]
 ```
 
 このような感じで、単体ごとに色を指定し`make_vector(的なの)` で、出口を一つにする(「出口を一つ」は、[後述](#))
@@ -295,16 +297,59 @@
 1次元にするために、`x`, `y` 軸でなくて、時間を使っていきます
 
 
-### `time` と`sine`
+### `time` と`sine` と `abs`
 
 
 ``` .hs
-[ "Time" <out: time>] -> [<final_color: (R, G, B)> "最終出力"]
+[ "Time" <out: time>] -> [<final_color: time> "最終出力"]
+```
+
+なんか、出ると思ったでしょ？
+
+残念でしたー！真っ白(の、はず)でーす 😩
+
+
+理由より先に、色を出します
+
+
+
+``` .hs
+[ "Time" <out: time>] -> [<in: time > "sine" <out: sine>] -> [<in: sine> "Abs" <out: abs>] -> [<final_color: abs> "最終出力"]
+```
+
+白黒で、チカチカした？(してくれないと困る)
+
+
+次に、2つの派生系を考えていきたい
+
+
+- チカチカする速さを変える
+- 他の色でチカチカさせたい
+
+関数のノードも使い始めたので、速度を変えることから
+
+
+#### 点滅の速さを変える
+
+
+コードを見ていく(見辛いから、改行しているけど、上と同じ)
+
+``` .hs
+[ "Time" <out: time>]
+-> [<in: time > "sine" <out: sine>] -> [<in: sine> "Abs" <out: abs>]
+-> [<final_color: abs> "最終出力"]
 ```
 
 
+`Time`(リファレンス見つからない)
+
+説明せんでも、わかるやろ？ 😇
 
 
+[`Sine`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/index.html#Sine)
+
+
+![画像](https://docs.unrealengine.com/Images/RenderingAndGraphics/Materials/ExpressionReference/Math/SineWave.webp)
 
 
 
