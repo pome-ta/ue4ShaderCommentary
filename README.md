@@ -18,7 +18,7 @@
 
 ### 具体例
 
-``` .xml
+``` .hs
 [ <TexCoord> { (r, g) } ] -> [ { final color: (r, g) } <最終出力> ]
 ```
 
