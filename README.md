@@ -1,11 +1,11 @@
 # ue4ShaderCommentary
-> ue マテリアルと、Shader
 
 
-書き方を定義したいと思います 😇<br>
-ノード(関数)と、ピン、ワイヤーを、文字で表現してみる試み
+いつも、手元にUnreal Engine が、あるとは限らないので、テキストエディタで表現できる書き方を定義したいと思います 😇<br>
+ノード(関数)と、ピン、ワイヤーを、文字で表現してみる試みちゃ☆
 
 > 複雑なことを書かないと思うので、便宜的に(ワイちゃんオリジナル)
+
 
 
 ## 表記例
@@ -30,7 +30,13 @@
 
 > [公式リファレンス(texturecoordinate)](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/index.html#texturecoordinate)
 
-ピンの`in` ,`out` の名前で繋ぐ的な
+マテリアルの設定で`UserInterface` に
+
+
+
+
+
+ピンの`in` ,`out` の名前で繋ぐ的な、ワイヤーの表現をしてる
 
 この場合だと、`TexCoord` の`out` にあるピンは、2つの値がある(`r = U` , `g = V` )
 
@@ -52,11 +58,36 @@
 `RGB` で色を表現できるので「赤、緑、青」は比較的扱いやすいので出力する。
 
 
+#### 赤
+
 ``` .hs
-[<R: 1.0, G: 0.0, B: 0.0> "Constant3Vector" <out: (R, G, B)>] -> [<final_color: (r, g)> "最終出力"]
+[<R: 1.0, G: 0.0, B: 0.0> "Constant3Vector" <out: (R, G, B)>] -> [<final_color: (R, G, B)> "最終出力"]
 ```
 
 > [公式リファレンス(Constant3Vector)](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Constant/index.html#constant3vector)
+
+
+`TexCoord` 使うと思った？まだ、早いぞ 😇
+
+赤色が出力されている(はず)だから、残りの2色も行ってみよー！
+
+
+
+#### 原色以外の色
+
+説明不要だと思うけど、`R`, `G`, `B` の数値を`0.0 ~ 1.0` 内で指定すれば表現できる
+
+- `R: 1.0, G: 0.5, B: 0.0`
+- `R: 0.0, G: 0.5, B: 0.0`
+- `R: 1.0, G: 0.0, B: 1.0`
+- `R: 0.5, G: 0.5, B: 1.0`
+
+など、、、
+
+あと以下もはずせない
+
+- `R: 0.0, G: 0.0, B: 0.0`
+- `R: 1.0, G: 1.0, B: 1.0`
 
 
 
