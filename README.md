@@ -26,7 +26,7 @@
 
 ![画像例](https://docs.unrealengine.com/Images/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/TextureCoordinateExample.jpg)
 
-↑は、Texture を表示してるけど、UV だけで出せる(後述します)
+↑は、Texture を表示してるけど、UV だけで出せる([後述](#)します)
 
 > [公式リファレンス(texturecoordinate)](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/index.html#texturecoordinate)
 
@@ -75,10 +75,10 @@
 ##### 他のアプローチ
 
 
-リファレンス検索して見つからなくて、(私が)前に使ったはずの[`Make Vector`](https://docs.unrealengine.com/en-US/BlueprintAPI/Math/Vector/MakeVector/index.html) を的なやつのマテリアルエディタで使えるやつ？での実装もできる
+リファレンス検索して見つからなくて、(私が)前に使ったはずの[`Make Vector`](https://docs.unrealengine.com/en-US/BlueprintAPI/Math/Vector/MakeVector/index.html) 的なやつのマテリアルエディタで使えるやつ？での実装もできる
 
 
-やり方、考え方は同じなのですが
+やり方、考え方は同じで
 
 
 ``` .hs
@@ -87,7 +87,7 @@
 [ "Constant" <B(とする): 0.0>] -> [<R, G, B> "make_vector(的なの)" <rgb: (R, G, B)>] -> [<final_color: (R, G, B)> "最終出力"]
 ```
 
-このような感じで、単体ごとに色を指定し`make_vector(的なの)` で、出口を一つにする
+このような感じで、単体ごとに色を指定し`make_vector(的なの)` で、出口を一つにする(「出口を一つ」は、[後述](#)します)
 
 
 
@@ -121,7 +121,29 @@
 
 
 
+ここでやっと(フラグメント(ピクセル))シェーダーの考え方が必要になってくる
 
+
+
+3 x 3 のマス目があるとする
+
+```
+(x: よこ, y: たて)
+
+         |          |
+(.0, .0) | (.5, .0) | (1., .0)
+         |          |
+---------|----------|----------
+         |          |
+(.0, .5) | (.5, .5) | (1., .5)
+         |          |
+---------|----------|----------
+         |          |
+(.0, 1.) | (.5, 1.) | (1., 1.)
+         |          |
+         |          |
+
+```
 
 
 
