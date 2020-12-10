@@ -557,7 +557,7 @@
 ue の関数から探すのではなく、やりたいことをue の関数から探してる
 
 
-[`TimeWithSpeedVariable`](https://docs.unrealengine.たcom/ja/RenderingAndGraphics/Materials/Functions/Reference/Misc/index.html#TimeWithSpeedVariable)
+[`TimeWithSpeedVariable`](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/Functions/Reference/Misc/index.html#TimeWithSpeedVariable)
 
 `time` に`Frac` なんていらなかったんや、、、
 
