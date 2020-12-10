@@ -333,7 +333,7 @@
 また、`vec2` から`vec3` に送ると、エラーになる(基本的には、そのままするっと通すのもあるので注意)
 
 
-##### 派生系を作ろう
+#### 派生系を作ろう
 
 `RGB` それぞれ(`vec3`) の数値を自由にいじり、合体させて`final_color` に送ることができる説明をした。
 
@@ -526,11 +526,13 @@
 
 
 
+## Texture と触れ合う
+
+![これ借りる](https://github.com/Arahnoid/UVChecker-map/blob/master/UVCheckerMaps/UVCheckerMap01-512.png)
 
 
 
-
-
+画像操作か、関数での操作かどっちにしようかな？
 
 
 
