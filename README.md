@@ -526,7 +526,9 @@
 
 
 
+## Texture と触れ合う
 
+![これ借りる](https://github.com/Arahnoid/UVChecker-map/blob/master/UVCheckerMaps/UVCheckerMap01-512.png)
 
 
 
