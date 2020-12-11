@@ -531,24 +531,36 @@
 
 # Texture と触れ合う
 
-![これ借りる](https://github.com/Arahnoid/UVChecker-map/blob/master/UVCheckerMaps/UVCheckerMap01-512.png)
-
-
-
-画像操作か、関数での操作かどっちにしようかな？
-
-
-
 > 私の理解用になる項目かも
 
 
+## UV Checker
+
+当分テクスチャには、`TextureParameter2D` で呼び出せるテンプレのueロゴを使って行く予定。
+
+
+必要に応じ(私が、アセット配布理解した頃に)
+
+
+![UVCheckerMap01-512.png](https://github.com/Arahnoid/UVChecker-map/blob/master/UVCheckerMaps/UVCheckerMap01-512.png)
+
+[Arahnoid/UVChecker-map](https://github.com/Arahnoid/UVChecker-map) をお借りする(予定)、GitHub にリポジトリとしてあり、
+
+> This work (UVChecker-map, by Igor Grinchesku) is free of known copyright restrictions.
+
+と、ライセンスも明記されてるので。
 
 
 
+UV 座標の目視確認的に、
 
 
+![UV_Grid_Sm.jpg](http://www.pixelsham.com/wp-content/uploads/2016/07/UV_Grid_Sm.jpg)
+
+の、方が良さげなのだが、[配布先](http://www.pixelsham.com/2018/09/29/uv-maps/) を見る限り、明確なライセンスがないため却下。
 
 
+> 暇が度を越えたら作ろうと思う(多分作らない)
 
 
 
