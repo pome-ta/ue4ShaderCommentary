@@ -580,6 +580,8 @@ UV 座標の目視確認的に、
 - [[UE4] マテリアルノードの解説 その1 | もんしょの巣穴blog](http://monsho.blog63.fc2.com/blog-entry-133.html)
 	- > マテリアルによって生成されるシェーダは、この辺の処理が明確な場合はコンパイラが勝手にそれっぽい計算をしてしまいます。例えば、`float4` の`vectorValue` と`float` の`floatValue` があったと仮定し、これを加算した場合、結果は以下のようになります。
 	- > `resultValue = {vectorValue.x + floatValue, vectorValue.y + floatValue, vectorValue.z + floatValue, vectorValue.w + floatValue}; `
+		- `vec4` = `vectorValue` を`x`, `y`, `z`, `w` と分割し、それぞれに`floatValue` を加算している。
+	- > ちなみに、明確でない場合はコンパイラがエラーを返します。
 
 - [[UE4] マテリアルノードの解説 その2 | もんしょの巣穴blog](http://monsho.blog63.fc2.com/blog-entry-134.html)
 
