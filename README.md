@@ -564,8 +564,19 @@ UV 座標の目視確認的に、
 
 
 
+## メモ
 
+### リファレンス
 
+- [Texture の表現式](https://docs.unrealengine.com/ja/RenderingAndGraphics/Materials/ExpressionReference/Textures/index.html)
+
+- [マップ チェック エラー](https://docs.unrealengine.com/ja/BuildingWorlds/LevelEditor/MapErrors/index.html)
+
+### 読み物
+
+- [[UE4] マテリアルノードの解説 その1 | もんしょの巣穴blog](http://monsho.blog63.fc2.com/blog-entry-133.html)
+
+- [[UE4] マテリアルノードの解説 その2 | もんしょの巣穴blog](http://monsho.blog63.fc2.com/blog-entry-134.html)
 
 
 
