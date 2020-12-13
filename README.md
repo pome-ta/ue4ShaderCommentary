@@ -21,6 +21,7 @@
 ## 具体例
 
 ``` .hs
+{- ここの表記はコメントになる -}
 [ "TexCoord" <out: (r, g)>] -> [<in: UVs> "Texture_Sample" <out: RGB>] -> [<Base_Color: UVs> "最終出力"]
 ```
 
