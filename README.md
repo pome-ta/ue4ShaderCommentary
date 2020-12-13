@@ -36,7 +36,7 @@
 
 具体例だと、`TexCoord` の `out` にあるピンは、2つの値がある(`r = U` , `g = V` )。
 
-`最終出力` の `final_color` は、`R,G,B` 値を受け取れる。`r = R` ,`g = G` を `TexCoord` の数値から貰ってくる。
+`最終出力` の `Base_Color` で、`Texture_Sample` から、`R,G,B` 値を受け取れる。`r = U` ,`g = V` を `TexCoord` の数値から貰ってくる。
 
 
 
