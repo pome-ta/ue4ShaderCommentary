@@ -21,7 +21,7 @@
 ## 具体例
 
 ``` .hs
-[ "TexCoord" <out: (r, g)>] -> [<final_color: (r, g)> "最終出力"]
+[ "TexCoord" <out: (r, g)>] -> [<in: UVs> "Texture_Sample" <out: RGB>] -> [<Base_Color: UVs> "最終出力"]
 ```
 
 ![画像例](https://docs.unrealengine.com/Images/RenderingAndGraphics/Materials/ExpressionReference/Coordinates/TextureCoordinateExample.jpg)
