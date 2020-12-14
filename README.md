@@ -597,58 +597,58 @@ Adobe 製品のグレーの市松模様的な。
 ### 読み物
 
 - [[UE4] マテリアルノードの解説 その1 | もんしょの巣穴blog](http://monsho.blog63.fc2.com/blog-entry-133.html)
-	- Mathカテゴリの解説
-		- 四則演算と剰余算
-  		- `Add`
-	  		- `+`
-  		- `Subtract`
-	  		- `-`
-  		- `Multiply`
-	  		- `*`
-  		- `Divide`
-	  		- `/`
-  		- `Fmod`
-	  		- `%`
-		- `LinearInterpolate`
-			- `Lerp`
-			- 線形補間
-		- `OneMinus`
-			- `1 - x`
-		- `Floor`
-		- `Frac`
-		- `Clamp`
-		- `Max`
-		- `Min`
-		- `Abs`
-		- `Power`
-		- `SquareRoot`
-			- `Sqrt`
-		- `DotProduct`
-			- `Dot`
-			- 内積
-		- `CrossProduct`
-			- `Cross`
-			- 外積
-		- `Normalize`
-		- `SafeNormalize`
-		- `AppendVector`
-		- `If`
-	- > マテリアルによって生成されるシェーダは、この辺の処理が明確な場合はコンパイラが勝手にそれっぽい計算をしてしまいます。例えば、`float4` の `vectorValue` と `float` の `floatValue` があったと仮定し、これを加算した場合、結果は以下のようになります。
-	- > `resultValue = {vectorValue.x + floatValue, vectorValue.y + floatValue, vectorValue.z + floatValue, vectorValue.w + floatValue}; `
-		- `vec4`( `vectorValue` ) を`x`, `y`, `z`, `w` と分割し、それぞれに `floatValue` を加算している。
-	- > ちなみに、明確でない場合はコンパイラがエラーを返します。
-	- > これを機にシェーダコードを書いてみる、ってのもありかとは思いますが。
-		- > これを機にシェーダコードを書いてみる、ってのもありかとは思いますが。
-			- > これを機にシェーダコードを書いてみる、ってのもありかとは思いますが。
+  - Mathカテゴリの解説
+    - 四則演算と剰余算
+      - `Add`
+        - `+`
+      - `Subtract`
+        - `-`
+      - `Multiply`
+        - `*`
+      - `Divide`
+        - `/`
+      - `Fmod`
+        - `%`
+    - `LinearInterpolate`
+      - `Lerp`
+      - 線形補間
+    - `OneMinus`
+      - `1 - x`
+    - `Floor`
+    - `Frac`
+    - `Clamp`
+    - `Max`
+    - `Min`
+    - `Abs`
+    - `Power`
+    - `SquareRoot`
+      - `Sqrt`
+    - `DotProduct`
+      - `Dot`
+      - 内積
+    - `CrossProduct`
+      - `Cross`
+      - 外積
+    - `Normalize`
+    - `SafeNormalize`
+    - `AppendVector`
+    - `If`
+  - > マテリアルによって生成されるシェーダは、この辺の処理が明確な場合はコンパイラが勝手にそれっぽい計算をしてしまいます。例えば、`float4` の `vectorValue` と `float` の `floatValue` があったと仮定し、これを加算した場合、結果は以下のようになります。
+  - > `resultValue = {vectorValue.x + floatValue, vectorValue.y + floatValue, vectorValue.z + floatValue, vectorValue.w + floatValue}; `
+    - `vec4`( `vectorValue` ) を`x`, `y`, `z`, `w` と分割し、それぞれに `floatValue` を加算している。
+  - > ちなみに、明確でない場合はコンパイラがエラーを返します。
+  - > これを機にシェーダコードを書いてみる、ってのもありかとは思いますが。
+    - > これを機にシェーダコードを書いてみる、ってのもありかとは思いますが。
+      - > これを機にシェーダコードを書いてみる、ってのもありかとは思いますが。
 
 - [[UE4] マテリアルノードの解説 その2 | もんしょの巣穴blog](http://monsho.blog63.fc2.com/blog-entry-134.html)
-	- `TextureSample`
-		- > 設定されたテクスチャはマテリアルで固定されるため、外部から変更することはできなくなります。
-	- `TextureSampleParameter`
-		- > TextureSampleとは違って外部から変更することが可能ですが、使用するテクスチャの種類についてだけは固定化されています。
-	- `TextureCoordinate`
-		- `TexCoord`
-		- > UVを時間経過に合わせて移動したり歪ませたりするには、このノードの出力を加工してテクスチャサンプルを行ってください。
+  - `TextureSample`
+    - > 設定されたテクスチャはマテリアルで固定されるため、外部から変更することはできなくなります。
+  - `TextureSampleParameter`
+    - > TextureSampleとは違って外部から変更することが可能ですが、使用するテクスチャの種類についてだけは固定化されています。
+  - `TextureCoordinate`
+    - `TexCoord`
+      - > UVを時間経過に合わせて移動したり歪ませたりするには、このノードの出力を加工してテクスチャサンプルを行ってください。
 - [[UE4] マテリアルノードの解説 補足の1 | もんしょの巣穴blog](http://monsho.blog63.fc2.com/blog-entry-135.html?sp)
 - [[UE4] マテリアルノードの解説 その3 | もんしょの巣穴blog](http://monsho.blog63.fc2.com/blog-entry-136.html?sp)
 
