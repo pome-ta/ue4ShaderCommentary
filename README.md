@@ -598,16 +598,29 @@ Adobe 製品のグレーの市松模様的な。
 
 ## 実装の考え方
 
+### 基本型
 
 ``` .hs
 [ "Texcoord" <out: RG>] -> [<in: UVs> "Param2D" <out: RGB>]
                         -> [<in: UVs> "TextureCropping" <out: CropMask>]
--> [<最終カラー: RGB> "最終出力"]
--> [<オパシティ: CropMask>]
+-> [<最終カラー: RGB>      "最終出力"]
+-> [<オパシティ: CropMask>           ]
 
 ```
 
-`Texcoord` 
+- `Texcoord`
+  - `UV` 生成
+- `Param2D`
+  - Texture を指定
+- `TextureCropping`
+  - 演算した結果(の、周りを切り取るイメージ)
+
+
+`Texcoord` -> `(なにか処理する)` -> `Param2D` & `TextureCropping` -> 出力
+
+
+`何か処理する` のところで、こねくり回す 💪
+
 
 
 
