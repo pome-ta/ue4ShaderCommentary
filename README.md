@@ -601,14 +601,10 @@ Adobe 製品のグレーの市松模様的な。
 
 ``` .hs
 [ "Texcoord" <out: RG>] -> [<in: UVs> "Param2D" <out: RGB>]
-                           [<in: UVs> "TextureCropping" <out: CropMask>]
+                        -> [<in: UVs> "TextureCropping" <out: CropMask>]
 -> [<最終カラー: RGB> "最終出力"]
--> [<オパシティ: >]
+-> [<オパシティ: CropMask>]
 
-{- ここにノードを追加 -}
--> [<A: time, B: 0.1> "Multiply" <out: mul>]
--> [<in: mul> "sine" <out: sine>] -> [<in: sine> "Abs" <out: abs>]
--> [<最終カラー: abs> "最終出力"]
 ```
 
 `Texcoord` 
